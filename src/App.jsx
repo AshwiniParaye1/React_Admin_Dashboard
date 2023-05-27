@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar";
 import MainDash from "./components/MainDash/MainDash";
+import RightSide from "./components/RightSideComponent/RightSide";
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
       <div className="AppGlass">
         <Sidebar />
         <MainDash />
-        <div></div>
+        <RightSide />
       </div>
     </div>
   );
