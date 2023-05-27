@@ -1,10 +1,9 @@
-import React from "react";
 import "./App.css";
+import RightSide from "./components/RightSideComponent/RightSide";
 import Sidebar from "./components/Sidebar/Sidebar";
 import MainDash from "./components/MainDash/MainDash";
-import RightSide from "./components/RightSideComponent/RightSide";
 
-const App = () => {
+function App() {
   return (
     <div className="App">
       <div className="AppGlass">
@@ -14,6 +13,6 @@ const App = () => {
       </div>
     </div>
   );
-};
+}
 
 export default App;

@@ -1,5 +1,4 @@
 import React from "react";
-import "./CustomerReview.css";
 import Chart from "react-apexcharts";
 
 const CustomerReview = () => {
@@ -55,10 +54,9 @@ const CustomerReview = () => {
       },
     },
   };
-
   return (
     <div className="CustomerReview">
-      <Chart series={data.series} options={data.options} type="area" />
+      <Chart options={data.options} series={data.series} type="area" />
     </div>
   );
 };
