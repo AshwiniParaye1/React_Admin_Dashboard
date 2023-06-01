@@ -1,0 +1,6 @@
+.calendar {
+  width: 1200px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

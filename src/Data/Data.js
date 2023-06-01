@@ -5,6 +5,7 @@ import {
   UilPackage,
   UilChart,
   UilSignOutAlt,
+  UilSchedule,
 } from "@iconscout/react-unicons";
 
 // Analytics Cards imports
@@ -38,6 +39,10 @@ export const SidebarData = [
     icon: UilChart,
     heading: "Analytics",
   },
+  // {
+  //   icon: UilSchedule,
+  //   heading: "Calendar",
+  // },
 ];
 
 // Analytics Cards Data

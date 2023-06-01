@@ -5,6 +5,8 @@ import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 import { SidebarData } from "./../../Data/Data";
+import { UilSchedule } from "@iconscout/react-unicons";
+import { Link } from "@mui/material";
 
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
@@ -55,9 +57,16 @@ const Sidebar = () => {
               </div>
             );
           })}
+          <div className="menuItem">
+            <Link href="/calendar">
+              <UilSchedule />
+            </Link>
+          </div>
           {/* signoutIcon */}
           <div className="menuItem">
-            <UilSignOutAlt />
+            <Link href="/logout">
+              <UilSignOutAlt />
+            </Link>
           </div>
         </div>
       </motion.div>
