@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { SidebarData } from "./../../Data/Data";
 import { UilSchedule } from "@iconscout/react-unicons";
 import { Link } from "@mui/material";
+import { toast, Toaster } from "react-hot-toast";
 
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
@@ -21,6 +22,7 @@ const Sidebar = () => {
       left: "-60%",
     },
   };
+
   // console.log(window.innerWidth);
   return (
     <>
@@ -57,14 +59,14 @@ const Sidebar = () => {
               </div>
             );
           })}
-          <div className="menuItem">
+          <div className="menuItem ">
             <Link href="/calendar">
               <UilSchedule />
             </Link>
           </div>
           {/* signoutIcon */}
           <div className="menuItem">
-            <Link href="/logout">
+            <Link href="/">
               <UilSignOutAlt />
             </Link>
           </div>
